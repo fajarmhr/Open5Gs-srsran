@@ -1,6 +1,11 @@
 #!/bin/bash
 
-UE_LOC="/home/adaptive/srsRAN/build/srsue/src/"
-CONF_LOC="/home/adaptive/fajar/ltevir.conf/"
+sudo ip netns add ue1
+echo "abaikan kalo ada warning, gapopo..."
 
-sudo ${UE_LOC}srsue ${CONF_LOC}ue.conf --gw.netns=ue1
+UE_LOC=`locate /src/srsue | grep /srsue/src/srsue`
+CONF_LOC=`locate ue.conf | grep ltevir`
+NETNS=`sudo ip netns list`
+OTHER_ARGS="--gw.netns="${NETNS}""
+
+sudo ${UE_LOC} ${CONF_LOC} ${OTHER_ARGS} $@
