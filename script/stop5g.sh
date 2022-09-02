@@ -24,11 +24,11 @@ echo "**** stopping 5G Core ****"
 echo
 echo
 
-echo "**** stopping upfd... ****"
-systemctl stop open5gs-upfd
+# echo "**** stopping upfd... ****"
+# systemctl stop open5gs-upfd
 
-echo "**** stopping smfd... ****"
-systemctl stop open5gs-smfd
+# echo "**** stopping smfd... ****"
+# systemctl stop open5gs-smfd
 
 echo "**** stopping amfd... ****"
 systemctl stop open5gs-amfd

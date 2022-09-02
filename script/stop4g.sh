@@ -23,11 +23,11 @@ systemctl stop open5gs-hssd
 echo "**** stopping pcrfd... ****"
 systemctl stop open5gs-pcrfd
 
-echo "**** stopping upfd... ****"
-systemctl stop open5gs-upfd
+# echo "**** stopping upfd... ****"
+# systemctl stop open5gs-upfd
 
-echo "**** stopping smfd... ****"
-systemctl stop open5gs-smfd
+# echo "**** stopping smfd... ****"
+# systemctl stop open5gs-smfd
 
 # echo "**** stopping amfd... ****"
 # systemctl stop open5gs-amfd
