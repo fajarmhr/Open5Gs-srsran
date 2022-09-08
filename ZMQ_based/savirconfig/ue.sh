@@ -1,7 +1,16 @@
 #!/bin/bash
 
-# sudo ip netns add ue1
-# echo "abaikan kalo ada warning, gapopo..."
+## Create netns for UE
+ip netns list | grep "ue1" > /dev/null
+if [ $? -eq 1 ]; then
+  echo creating netspace ue1...
+  sudo ip netns add ue1
+  if [ $? -ne 0 ]; then
+   echo failed to create netns ue1
+   exit 1
+  fi
+fi
+
 
 UE_LOC=`locate /src/srsue | grep /srsue/src/srsue`
 CONF_LOC=`locate ue.conf | grep savir`
