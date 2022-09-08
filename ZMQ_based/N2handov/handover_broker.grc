@@ -33,7 +33,7 @@ options:
     state: enabled
 
 blocks:
-- name: cell_gain1
+- name: cell_gain0
   id: variable_qtgui_range
   parameters:
     comment: ''
@@ -54,7 +54,7 @@ blocks:
     coordinate: [620, 6]
     rotation: 0
     state: true
-- name: cell_gain2
+- name: cell_gain1
   id: variable_qtgui_range
   parameters:
     comment: ''
@@ -79,7 +79,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '1920000.0'
+    value: 1.92e6
   states:
     bus_sink: false
     bus_source: false
@@ -111,7 +111,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    const: cell_gain1
+    const: cell_gain0
     maxoutbuf: '0'
     minoutbuf: '0'
     type: complex
@@ -129,7 +129,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    const: cell_gain2
+    const: cell_gain1
     maxoutbuf: '0'
     minoutbuf: '0'
     type: complex

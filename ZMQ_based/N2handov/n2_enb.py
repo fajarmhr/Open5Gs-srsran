@@ -74,7 +74,7 @@ class n2_enb(gr.top_block, Qt.QWidget):
         ##################################################
         # Variables
         ##################################################
-        self.samp_rate = samp_rate = 1920000.0
+        self.samp_rate = samp_rate = 1.92e6
         self.cell_gain1 = cell_gain1 = 0
         self.cell_gain0 = cell_gain0 = 1
 

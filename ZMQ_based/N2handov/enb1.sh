@@ -9,7 +9,7 @@ RB_LOC=`locate rb.conf | grep N2handov`
 SIB_LOC=`locate sib.conf | grep N2handov`
 PORT_ARGS="tx_port=tcp://*:2101,rx_port=tcp://localhost:2100"
 
-ZMQ_ARGS="--rf.device_name=zmq --rf.device_args=\"${PORT_ARGS},id=enb,base_srate=23.04e6\""
+ZMQ_ARGS="--rf.device_args=\"fail_on_disconnect=true,${PORT_ARGS},id=enb,base_srate=11.52e6\""
 OTHER_ARGS="--enb_files.rr_config="${RR_LOC}"
 --enb_files.rb_config="${RB_LOC}"
 --enb_files.sib_config="${SIB_LOC}""
