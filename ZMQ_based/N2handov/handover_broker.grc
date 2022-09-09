@@ -102,7 +102,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [496, 288.0]
+    coordinate: [504, 288.0]
     rotation: 0
     state: true
 - name: blocks_multiply_const_vxx_0
@@ -176,7 +176,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [600, 284.0]
+    coordinate: [616, 284.0]
     rotation: 0
     state: true
 - name: zeromq_rep_sink_1
