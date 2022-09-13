@@ -1,35 +1,41 @@
 #!/bin/bash
 
-LOC=`locate test/raw/`
+a=`cat /var/log/open5gs/amf.log`
+b=`cat /var/log/open5gs/upf.log`
+c=`cat /var/log/open5gs/ausf.log`
+d=`cat /var/log/open5gs/udm.log`
+e=`cat /var/log/open5gs/udr.log`
+f=`cat /var/log/open5gs/pcf.log`
+g=`cat /var/log/open5gs/smf.log`
+h=`cat /var/log/open5gs/nrf.log`
+i=`cat /var/log/open5gs/nssf.log`
 
-a=`cat /var/log/open5gs/amf.log | awk '{print$2}' | awk '{print$3}' | awk '{print$4}' | awk '{print$5}'`$'\n'
-b=`cat /var/log/open5gs/upf.log | awk '{print$2}' | awk '{print$3}' | awk '{print$4}' | awk '{print$5}'`$'\n'
-c=`cat /var/log/open5gs/ausf.log | awk '{print$2}' | awk '{print$3}' | awk '{print$4}' | awk '{print$5}'`$'\n'
-d=`cat /var/log/open5gs/udm.log | awk '{print$2}' | awk '{print$3}' | awk '{print$4}' | awk '{print$5}'`$'\n'
-e=`cat /var/log/open5gs/udr.log | awk '{print$2}' | awk '{print$3}' | awk '{print$4}' | awk '{print$5}'`$'\n'
-f=`cat /var/log/open5gs/pcf.log | awk '{print$2}' | awk '{print$3}' | awk '{print$4}' | awk '{print$5}'`$'\n'
-g=`cat /var/log/open5gs/smf.log | awk '{print$2}' | awk '{print$3}' | awk '{print$4}' | awk '{print$5}'`$'\n'
-h=`cat /var/log/open5gs/nrf.log | awk '{print$2}' | awk '{print$3}' | awk '{print$4}' | awk '{print$5}'`$'\n'
-i=`cat /var/log/open5gs/nssf.log | awk '{print$2}' | awk '{print$3}' | awk '{print$4}' | awk '{print$5}'`$'\n'
+cd raw
+echo "$a" > amf.csv
+echo "$b" > upf.csv
+echo "$c" > ausf.csv
+echo "$d" > udm.csv
+echo "$e" > udr.csv
+echo "$f" > pcf.csv
+echo "$g" > smf.csv
+echo "$h" > nrf.csv
+echo "$i" > nssf.csv
 
-cd ${LOC}
-rm *
-echo "$a" >> amf.csv
-echo "$b" >> upf.csv
-echo "$c" >> ausf.csv
-echo "$d" >> udm.csv
-echo "$e" >> udr.csv
-echo "$f" >> pcf.csv
-echo "$g" >> smf.csv
-echo "$h" >> nrf.csv
-echo "$i" >> nssf.csv
+sudo updatedb
+cc=`locate /raw/semua.csv`
+if [ -z "$cc" ]
+then
+    echo ""
+else
+    rm semua.csv
+fi
 
-echo "$a" > semua.csv
-echo "$b" > semua.csv
-echo "$c" > semua.csv
-echo "$d" > semua.csv
-echo "$e" > semua.csv
-echo "$f" > semua.csv
-echo "$g" > semua.csv
-echo "$h" > semua.csv
-echo "$i" > semua.csv
+echo -e "$a \n\n" >> semua.csv
+echo -e "$b \n\n" >> semua.csv
+echo -e "$c \n\n" >> semua.csv
+echo -e "$d \n\n" >> semua.csv
+echo -e "$e \n\n" >> semua.csv
+echo -e "$f \n\n" >> semua.csv
+echo -e "$g \n\n" >> semua.csv
+echo -e "$h \n\n" >> semua.csv
+echo -e "$i \n\n" >> semua.csv
