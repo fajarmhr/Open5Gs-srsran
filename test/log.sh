@@ -9,6 +9,7 @@ f=`cat /var/log/open5gs/pcf.log`
 g=`cat /var/log/open5gs/smf.log`
 h=`cat /var/log/open5gs/nrf.log`
 i=`cat /var/log/open5gs/nssf.log`
+j=`cat /var/log/open5gs/bsf.log`
 
 cd raw
 echo "$a" > amf.csv
@@ -20,6 +21,7 @@ echo "$f" > pcf.csv
 echo "$g" > smf.csv
 echo "$h" > nrf.csv
 echo "$i" > nssf.csv
+echo "$j" > bsf.csv
 
 sudo updatedb
 cc=`locate /raw/semua.csv`
@@ -39,3 +41,4 @@ echo -e "$f \n\n" >> semua.csv
 echo -e "$g \n\n" >> semua.csv
 echo -e "$h \n\n" >> semua.csv
 echo -e "$i \n\n" >> semua.csv
+echo -e "$j \n\n" >> semua.csv

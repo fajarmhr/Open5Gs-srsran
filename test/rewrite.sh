@@ -10,3 +10,10 @@ echo "" > pcf.log
 echo "" > smf.log
 echo "" > nrf.log
 echo "" > nssf.log
+
+echo "" > sgwu.log
+echo "" > sgwc.log
+echo "" > bsf.log
+echo "" > pcrf.log
+echo "" > mme.log
+echo "" > hss.log
