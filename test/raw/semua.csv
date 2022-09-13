@@ -1,27 +1,288 @@
- 
+
+09/13 17:12:34.198: [sbi] INFO: [50c692e2-3338-41ed-85b7-a9c576af3f27] NF removed (../lib/sbi/nnrf-handler.c:653)
+09/13 17:12:34.327: [app] INFO: SIGTERM received (../src/main.c:53)
+09/13 17:12:34.327: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+09/13 17:12:34.327: [sbi] INFO: [50c71d66-3338-41ed-816f-a71a1922c60e] NF de-registered (../lib/sbi/nf-sm.c:245)
+09/13 17:12:34.328: [sctp] INFO: AMF terminate...done (../src/amf/app.c:42)
+09/13 17:12:34.328: [event] ERROR: 6 in '&manager->pool[16384]' were not released. (../lib/core/ogs-timer.c:69)
+Open5GS daemon v2.4.10
+
+09/13 17:12:34.333: [app] INFO: Configuration: '/etc/open5gs/amf.yaml' (../lib/app/ogs-init.c:126)
+09/13 17:12:34.333: [app] INFO: File Logging: '/var/log/open5gs/amf.log' (../lib/app/ogs-init.c:129)
+09/13 17:12:34.334: [sbi] INFO: NF Service [namf-comm] (../lib/sbi/context.c:1392)
+09/13 17:12:34.334: [sbi] INFO: nghttp2_server() [127.0.0.5]:7777 (../lib/sbi/nghttp2-server.c:149)
+09/13 17:12:34.334: [amf] INFO: ngap_server() [127.0.0.5]:38412 (../src/amf/ngap-sctp.c:61)
+09/13 17:12:34.334: [sctp] INFO: AMF initialize...done (../src/amf/app.c:33)
+09/13 17:12:34.335: [sbi] INFO: [95df9dec-334c-41ed-8413-b93011f5e5f7] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:222)
+09/13 17:12:34.341: [sbi] INFO: [95dd38cc-334c-41ed-ba01-c96776889f1f] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:628)
+09/13 17:12:34.341: [sbi] INFO: [95dd38cc-334c-41ed-ba01-c96776889f1f] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:638)
+09/13 17:12:44.345: [sbi] WARNING: [95df9dec-334c-41ed-8413-b93011f5e5f7] HTTP response error [404] (../lib/sbi/nf-sm.c:278)
+09/13 17:12:44.345: [sbi] INFO: [95df9dec-334c-41ed-8413-b93011f5e5f7] NF de-registered (../lib/sbi/nf-sm.c:245)
+09/13 17:12:46.347: [sbi] WARNING: [95df9dec-334c-41ed-8413-b93011f5e5f7] Retry to registration with NRF (../lib/sbi/nf-sm.c:408)
+09/13 17:12:46.347: [sbi] INFO: [95df9dec-334c-41ed-8413-b93011f5e5f7] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:222)
+09/13 17:12:46.352: [sbi] WARNING: [95dd38cc-334c-41ed-ba01-c96776889f1f] (NRF-notify) NF has already been added (../lib/sbi/nnrf-handler.c:632)
+09/13 17:12:46.352: [sbi] INFO: [95dd38cc-334c-41ed-ba01-c96776889f1f] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:638)
+09/13 17:12:46.352: [sbi] WARNING: NF EndPoint updated [127.0.0.4:80] (../lib/sbi/context.c:1564)
+09/13 17:12:46.352: [sbi] WARNING: NF EndPoint updated [127.0.0.4:7777] (../lib/sbi/context.c:1473)
+09/13 17:12:49.786: [amf] INFO: gNB-N2 accepted[127.0.1.1]:39103 in ng-path module (../src/amf/ngap-sctp.c:113)
+09/13 17:12:49.786: [amf] INFO: gNB-N2 accepted[127.0.1.1] in master_sm module (../src/amf/amf-sm.c:659)
+09/13 17:12:49.786: [amf] INFO: [Added] Number of gNBs is now 1 (../src/amf/context.c:880)
+09/13 17:12:49.786: [amf] INFO: gNB-N2[127.0.1.1] max_num_of_ostreams : 30 (../src/amf/amf-sm.c:698)
+09/13 17:13:00.531: [amf] INFO: gNB-N2 accepted[127.0.1.2]:38034 in ng-path module (../src/amf/ngap-sctp.c:113)
+09/13 17:13:00.531: [amf] INFO: gNB-N2 accepted[127.0.1.2] in master_sm module (../src/amf/amf-sm.c:659)
+09/13 17:13:00.531: [amf] INFO: [Added] Number of gNBs is now 2 (../src/amf/context.c:880)
+09/13 17:13:00.531: [amf] INFO: gNB-N2[127.0.1.2] max_num_of_ostreams : 30 (../src/amf/amf-sm.c:698)
+09/13 17:13:16.852: [amf] INFO: InitialUEMessage (../src/amf/ngap-handler.c:361)
+09/13 17:13:16.853: [amf] INFO: [Added] Number of gNB-UEs is now 1 (../src/amf/context.c:2132)
+09/13 17:13:16.853: [amf] INFO: Unknown UE by 5G-S_TMSI[AMF_ID:0x20000,M_TMSI:0x7255bc1e] (../src/amf/ngap-handler.c:431)
+09/13 17:13:16.853: [amf] INFO:     RAN_UE_NGAP_ID[1] AMF_UE_NGAP_ID[1] TAC[7] CellID[0x670001] (../src/amf/ngap-handler.c:497)
+09/13 17:13:16.861: [amf] INFO: [suci-0-001-01-0000-0-0-0123456780] Unknown UE by SUCI (../src/amf/context.c:1443)
+09/13 17:13:16.861: [amf] INFO: [Added] Number of AMF-UEs is now 1 (../src/amf/context.c:1239)
+09/13 17:13:16.861: [gmm] INFO: Registration request (../src/amf/gmm-sm.c:135)
+09/13 17:13:16.861: [gmm] INFO: [suci-0-001-01-0000-0-0-0123456780]    SUCI (../src/amf/gmm-handler.c:149)
+09/13 17:13:16.861: [sbi] WARNING: Try to discover [nausf-auth] (../lib/sbi/path.c:114)
+09/13 17:13:16.861: [sbi] INFO: [960d9e4a-334c-41ed-860b-2f1c991745ce] (NF-discover) NF registered (../lib/sbi/nnrf-handler.c:731)
+09/13 17:13:16.861: [sbi] INFO: [960d9e4a-334c-41ed-860b-2f1c991745ce] (NF-discover) NF Profile updated (../lib/sbi/nnrf-handler.c:758)
+09/13 17:13:16.926: [sbi] WARNING: Try to discover [nudm-uecm] (../lib/sbi/path.c:114)
+09/13 17:13:16.927: [sbi] INFO: [9610a3b0-334c-41ed-a78c-e58738c840eb] (NF-discover) NF registered (../lib/sbi/nnrf-handler.c:731)
+09/13 17:13:16.927: [sbi] INFO: [9610a3b0-334c-41ed-a78c-e58738c840eb] (NF-discover) NF Profile updated (../lib/sbi/nnrf-handler.c:758)
+09/13 17:13:16.927: [sbi] WARNING: Try to discover [nudm-sdm] (../lib/sbi/path.c:114)
+09/13 17:13:16.928: [sbi] WARNING: [9610a3b0-334c-41ed-a78c-e58738c840eb] (NF-discover) NF has already been added (../lib/sbi/nnrf-handler.c:735)
+09/13 17:13:16.928: [sbi] WARNING: NF EndPoint updated [127.0.0.12:80] (../lib/sbi/context.c:1564)
+09/13 17:13:16.928: [sbi] WARNING: NF EndPoint updated [127.0.0.12:7777] (../lib/sbi/context.c:1473)
+09/13 17:13:16.928: [sbi] INFO: [9610a3b0-334c-41ed-a78c-e58738c840eb] (NF-discover) NF Profile updated (../lib/sbi/nnrf-handler.c:758)
+09/13 17:13:16.930: [sbi] WARNING: Try to discover [npcf-am-policy-control] (../lib/sbi/path.c:114)
+09/13 17:13:16.930: [sbi] INFO: [96122f50-334c-41ed-9b3a-b793e86c0927] (NF-discover) NF registered (../lib/sbi/nnrf-handler.c:731)
+09/13 17:13:16.930: [sbi] INFO: [96122f50-334c-41ed-9b3a-b793e86c0927] (NF-discover) NF Profile updated (../lib/sbi/nnrf-handler.c:758)
+09/13 17:13:17.181: [gmm] INFO: [imsi-001010123456780] Registration complete (../src/amf/gmm-sm.c:1124)
+09/13 17:13:17.181: [amf] INFO: [imsi-001010123456780] Configuration update command (../src/amf/nas-path.c:430)
+09/13 17:13:17.181: [gmm] INFO:     UTC [2022-09-13T10:13:17] Timezone[0]/DST[0] (../src/amf/gmm-build.c:531)
+09/13 17:13:17.181: [gmm] INFO:     LOCAL [2022-09-13T17:13:17] Timezone[25200]/DST[0] (../src/amf/gmm-build.c:536)
+09/13 17:13:17.181: [amf] INFO: [Added] Number of AMF-Sessions is now 1 (../src/amf/context.c:2146)
+09/13 17:13:17.181: [gmm] INFO: UE SUPI[imsi-001010123456780] DNN[internet] S_NSSAI[SST:1 SD:0xffffff] (../src/amf/gmm-handler.c:1062)
+09/13 17:13:17.385: [gmm] ERROR: [imsi-001010123456780] No GUTI allocated (../src/amf/gmm-sm.c:346)
+09/13 17:16:10.650: [amf] INFO: gNB-N2[127.0.1.2] connection refused!!! (../src/amf/amf-sm.c:711)
+09/13 17:16:10.650: [amf] INFO: [Removed] Number of gNBs is now 1 (../src/amf/context.c:907)
+09/13 17:16:10.651: [amf] INFO: [Removed] Number of gNB-UEs is now 0 (../src/amf/context.c:2139)
+09/13 17:16:18.569: [amf] INFO: gNB-N2[127.0.1.1] connection refused!!! (../src/amf/amf-sm.c:711)
+09/13 17:16:18.569: [amf] INFO: [Removed] Number of gNBs is now 0 (../src/amf/context.c:907) 
 
 
- 
+
+09/13 17:12:34.341: [upf] WARNING: PFCP[REQ] has already been associated (../src/upf/pfcp-sm.c:202)
+09/13 17:12:34.358: [app] INFO: SIGTERM received (../src/main.c:53)
+09/13 17:12:34.358: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+09/13 17:12:34.359: [upf] INFO: PFCP de-associated (../src/upf/pfcp-sm.c:178)
+09/13 17:12:34.359: [app] INFO: UPF terminate...done (../src/upf/app.c:39)
+Open5GS daemon v2.4.10
+
+09/13 17:12:34.363: [app] INFO: Configuration: '/etc/open5gs/upf.yaml' (../lib/app/ogs-init.c:126)
+09/13 17:12:34.363: [app] INFO: File Logging: '/var/log/open5gs/upf.log' (../lib/app/ogs-init.c:129)
+09/13 17:12:34.366: [pfcp] INFO: pfcp_server() [127.0.0.7]:8805 (../lib/pfcp/path.c:30)
+09/13 17:12:34.366: [gtp] INFO: gtp_server() [127.0.0.7]:2152 (../lib/gtp/path.c:30)
+09/13 17:12:34.367: [app] INFO: UPF initialize...done (../src/upf/app.c:31)
+09/13 17:12:45.343: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.4]:8805 (../lib/pfcp/path.c:61)
+09/13 17:12:45.343: [upf] WARNING: cannot handle PFCP message type[1] (../src/upf/pfcp-sm.c:139)
+09/13 17:12:47.843: [pfcp] WARNING: [2] REMOTE Request Duplicated. Discard! for step 1 type 1 peer [127.0.0.4]:8805 (../lib/pfcp/xact.c:402)
+09/13 17:12:50.346: [pfcp] WARNING: [2] REMOTE Request Duplicated. Discard! for step 1 type 1 peer [127.0.0.4]:8805 (../lib/pfcp/xact.c:402)
+09/13 17:12:52.848: [upf] INFO: PFCP associated (../src/upf/pfcp-sm.c:173)
+09/13 17:13:17.184: [upf] INFO: [Added] Number of UPF-Sessions is now 1 (../src/upf/context.c:178)
+09/13 17:13:17.184: [gtp] INFO: gtp_connect() [127.0.0.4]:2152 (../lib/gtp/path.c:60)
+09/13 17:13:17.184: [upf] INFO: UE F-SEID[CP:0x1 UP:0x1] APN[internet] PDN-Type[1] IPv4[10.45.0.2] IPv6[] (../src/upf/context.c:397)
+09/13 17:13:17.184: [upf] INFO: UE F-SEID[CP:0x1 UP:0x1] APN[internet] PDN-Type[1] IPv4[10.45.0.2] IPv6[] (../src/upf/context.c:397)
+09/13 17:13:17.184: [gtp] INFO: gtp_connect() [127.0.1.2]:2152 (../lib/gtp/path.c:60) 
 
 
- 
+
+09/13 17:12:34.630: [app] INFO: SIGTERM received (../src/main.c:53)
+09/13 17:12:34.630: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+09/13 17:12:34.630: [sbi] INFO: [50f67d04-3338-41ed-8d09-a9b3accc9481] NF de-registered (../lib/sbi/nf-sm.c:245)
+09/13 17:12:34.631: [app] INFO: AUSF terminate...done (../src/ausf/app.c:39)
+Open5GS daemon v2.4.10
+
+09/13 17:12:34.635: [app] INFO: Configuration: '/etc/open5gs/ausf.yaml' (../lib/app/ogs-init.c:126)
+09/13 17:12:34.635: [app] INFO: File Logging: '/var/log/open5gs/ausf.log' (../lib/app/ogs-init.c:129)
+09/13 17:12:34.635: [sbi] INFO: NF Service [nausf-auth] (../lib/sbi/context.c:1392)
+09/13 17:12:34.636: [sbi] INFO: nghttp2_server() [127.0.0.11]:7777 (../lib/sbi/nghttp2-server.c:149)
+09/13 17:12:34.636: [app] INFO: AUSF initialize...done (../src/ausf/app.c:31)
+09/13 17:12:34.636: [sbi] INFO: [960d9e4a-334c-41ed-860b-2f1c991745ce] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:222)
+09/13 17:12:34.656: [sbi] INFO: [9610a3b0-334c-41ed-a78c-e58738c840eb] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:628)
+09/13 17:12:34.656: [sbi] INFO: [9610a3b0-334c-41ed-a78c-e58738c840eb] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:638) 
 
 
- 
+
+09/13 17:12:34.650: [app] INFO: SIGTERM received (../src/main.c:53)
+09/13 17:12:34.650: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+09/13 17:12:34.650: [sbi] INFO: [50f7fe18-3338-41ed-8655-1139155df1f4] NF de-registered (../lib/sbi/nf-sm.c:245)
+09/13 17:12:34.651: [app] INFO: UDM terminate...done (../src/udm/app.c:39)
+Open5GS daemon v2.4.10
+
+09/13 17:12:34.654: [app] INFO: Configuration: '/etc/open5gs/udm.yaml' (../lib/app/ogs-init.c:126)
+09/13 17:12:34.654: [app] INFO: File Logging: '/var/log/open5gs/udm.log' (../lib/app/ogs-init.c:129)
+09/13 17:12:34.655: [sbi] INFO: NF Service [nudm-ueau] (../lib/sbi/context.c:1392)
+09/13 17:12:34.655: [sbi] INFO: NF Service [nudm-uecm] (../lib/sbi/context.c:1392)
+09/13 17:12:34.655: [sbi] INFO: NF Service [nudm-sdm] (../lib/sbi/context.c:1392)
+09/13 17:12:34.655: [sbi] INFO: nghttp2_server() [127.0.0.12]:7777 (../lib/sbi/nghttp2-server.c:149)
+09/13 17:12:34.655: [app] INFO: UDM initialize...done (../src/udm/app.c:31)
+09/13 17:12:34.656: [sbi] INFO: [9610a3b0-334c-41ed-a78c-e58738c840eb] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:222)
+09/13 17:12:34.715: [sbi] INFO: [961991aa-334c-41ed-be7c-495263461f43] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:628)
+09/13 17:12:34.715: [sbi] INFO: [961991aa-334c-41ed-be7c-495263461f43] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:638) 
 
 
- 
+
+09/13 17:12:34.704: [app] INFO: SIGTERM received (../src/main.c:53)
+09/13 17:12:34.704: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+09/13 17:12:34.704: [sbi] INFO: [510a1bf2-3338-41ed-b132-7b20786fac5a] NF de-registered (../lib/sbi/nf-sm.c:245)
+09/13 17:12:34.706: [app] INFO: UDR terminate...done (../src/udr/app.c:39)
+Open5GS daemon v2.4.10
+
+09/13 17:12:34.713: [app] INFO: Configuration: '/etc/open5gs/udr.yaml' (../lib/app/ogs-init.c:126)
+09/13 17:12:34.713: [app] INFO: File Logging: '/var/log/open5gs/udr.log' (../lib/app/ogs-init.c:129)
+09/13 17:12:34.715: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+09/13 17:12:34.715: [sbi] INFO: NF Service [nudr-dr] (../lib/sbi/context.c:1392)
+09/13 17:12:34.715: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:149)
+09/13 17:12:34.715: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+09/13 17:12:34.715: [sbi] INFO: [961991aa-334c-41ed-be7c-495263461f43] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:222) 
 
 
- 
+
+09/13 17:12:34.656: [app] INFO: SIGTERM received (../src/main.c:53)
+09/13 17:12:34.656: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+09/13 17:12:34.656: [sbi] INFO: [50fa4196-3338-41ed-a318-095a547e7f60] NF de-registered (../lib/sbi/nf-sm.c:245)
+09/13 17:12:34.658: [app] INFO: PCF terminate...done (../src/pcf/app.c:39)
+Open5GS daemon v2.4.10
+
+09/13 17:12:34.665: [app] INFO: Configuration: '/etc/open5gs/pcf.yaml' (../lib/app/ogs-init.c:126)
+09/13 17:12:34.665: [app] INFO: File Logging: '/var/log/open5gs/pcf.log' (../lib/app/ogs-init.c:129)
+09/13 17:12:34.666: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+09/13 17:12:34.666: [sbi] INFO: NF Service [npcf-am-policy-control] (../lib/sbi/context.c:1392)
+09/13 17:12:34.666: [sbi] INFO: NF Service [npcf-smpolicycontrol] (../lib/sbi/context.c:1392)
+09/13 17:12:34.666: [sbi] INFO: NF Service [npcf-policyauthorization] (../lib/sbi/context.c:1392)
+09/13 17:12:34.666: [sbi] INFO: nghttp2_server() [127.0.0.13]:7777 (../lib/sbi/nghttp2-server.c:149)
+09/13 17:12:34.666: [app] INFO: PCF initialize...done (../src/pcf/app.c:31)
+09/13 17:12:34.666: [sbi] INFO: [96122f50-334c-41ed-9b3a-b793e86c0927] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:222)
+09/13 17:12:34.704: [sbi] INFO: [9617f688-334c-41ed-b86e-6d6a44f8c143] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:628)
+09/13 17:12:34.704: [sbi] INFO: [9617f688-334c-41ed-b86e-6d6a44f8c143] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:638)
+09/13 17:12:34.715: [sbi] INFO: [961991aa-334c-41ed-be7c-495263461f43] (NRF-notify) NF registered (../lib/sbi/nnrf-handler.c:628)
+09/13 17:12:34.715: [sbi] INFO: [961991aa-334c-41ed-be7c-495263461f43] (NRF-notify) NF Profile updated (../lib/sbi/nnrf-handler.c:638) 
 
 
- 
+
+09/13 17:12:34.198: [app] INFO: SIGTERM received (../src/main.c:53)
+09/13 17:12:34.198: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+09/13 17:12:34.198: [sbi] INFO: [50c692e2-3338-41ed-85b7-a9c576af3f27] NF de-registered (../lib/sbi/nf-sm.c:245)
+09/13 17:12:34.199: [smf] INFO: PFCP de-associated (../src/smf/pfcp-sm.c:179)
+09/13 17:12:34.308: [app] INFO: SMF terminate...done (../src/smf/app.c:39)
+09/13 17:12:34.308: [event] ERROR: 3 in '&manager->pool[16384]' were not released. (../lib/core/ogs-timer.c:69)
+Open5GS daemon v2.4.10
+
+09/13 17:12:34.315: [app] INFO: Configuration: '/etc/open5gs/smf.yaml' (../lib/app/ogs-init.c:126)
+09/13 17:12:34.315: [app] INFO: File Logging: '/var/log/open5gs/smf.log' (../lib/app/ogs-init.c:129)
+09/13 17:12:34.341: [gtp] INFO: gtp_server() [127.0.0.4]:2123 (../lib/gtp/path.c:30)
+09/13 17:12:34.341: [gtp] INFO: gtp_server() [::1]:2123 (../lib/gtp/path.c:30)
+09/13 17:12:34.341: [gtp] INFO: gtp_server() [127.0.0.4]:2152 (../lib/gtp/path.c:30)
+09/13 17:12:34.341: [gtp] INFO: gtp_server() [::1]:2152 (../lib/gtp/path.c:30)
+09/13 17:12:34.341: [pfcp] INFO: pfcp_server() [127.0.0.4]:8805 (../lib/pfcp/path.c:30)
+09/13 17:12:34.341: [pfcp] INFO: pfcp_server() [::1]:8805 (../lib/pfcp/path.c:30)
+09/13 17:12:34.341: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.7]:8805 (../lib/pfcp/path.c:61)
+09/13 17:12:34.341: [sbi] INFO: NF Service [nsmf-pdusession] (../lib/sbi/context.c:1392)
+09/13 17:12:34.341: [sbi] INFO: nghttp2_server() [127.0.0.4]:7777 (../lib/sbi/nghttp2-server.c:149)
+09/13 17:12:34.341: [app] INFO: SMF initialize...done (../src/smf/app.c:31)
+09/13 17:12:34.341: [smf] INFO: PFCP associated (../src/smf/pfcp-sm.c:174)
+09/13 17:12:34.341: [diam] INFO: CONNECTED TO 'pcrf.localdomain' (SCTP,soc#21): (../lib/diameter/common/logger.c:108)
+09/13 17:12:34.341: [sbi] INFO: [95dd38cc-334c-41ed-ba01-c96776889f1f] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:222)
+09/13 17:12:34.626: [diam] INFO: CONNECTED TO 'pcrf.localdomain' (SCTP,soc#9): (../lib/diameter/common/logger.c:108)
+09/13 17:12:44.350: [sbi] WARNING: [95dd38cc-334c-41ed-ba01-c96776889f1f] HTTP response error [404] (../lib/sbi/nf-sm.c:278)
+09/13 17:12:44.350: [sbi] INFO: [95dd38cc-334c-41ed-ba01-c96776889f1f] NF de-registered (../lib/sbi/nf-sm.c:245)
+09/13 17:12:46.351: [sbi] WARNING: [95dd38cc-334c-41ed-ba01-c96776889f1f] Retry to registration with NRF (../lib/sbi/nf-sm.c:408)
+09/13 17:12:46.352: [sbi] INFO: [95dd38cc-334c-41ed-ba01-c96776889f1f] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:222)
+09/13 17:12:52.848: [pfcp] WARNING: [2] LOCAL  No Reponse. Give up! for step 1 type 1 peer [127.0.0.7]:8805 (../lib/pfcp/xact.c:613)
+09/13 17:12:52.848: [smf] WARNING: No Heartbeat from UPF [127.0.0.7]:8805 (../src/smf/pfcp-sm.c:308)
+09/13 17:12:52.848: [smf] INFO: PFCP de-associated (../src/smf/pfcp-sm.c:179)
+09/13 17:12:52.848: [smf] INFO: PFCP associated (../src/smf/pfcp-sm.c:174)
+09/13 17:13:17.182: [smf] INFO: [Added] Number of SMF-UEs is now 1 (../src/smf/context.c:896)
+09/13 17:13:17.182: [smf] INFO: [Added] Number of SMF-Sessions is now 1 (../src/smf/context.c:2973)
+09/13 17:13:17.182: [sbi] WARNING: Try to discover [nudm-sdm] (../lib/sbi/path.c:114)
+09/13 17:13:17.182: [sbi] INFO: [9610a3b0-334c-41ed-a78c-e58738c840eb] (NF-discover) NF registered (../lib/sbi/nnrf-handler.c:731)
+09/13 17:13:17.182: [sbi] INFO: [9610a3b0-334c-41ed-a78c-e58738c840eb] (NF-discover) NF Profile updated (../lib/sbi/nnrf-handler.c:758)
+09/13 17:13:17.183: [sbi] WARNING: Try to discover [npcf-smpolicycontrol] (../lib/sbi/path.c:114)
+09/13 17:13:17.183: [sbi] INFO: [96122f50-334c-41ed-9b3a-b793e86c0927] (NF-discover) NF registered (../lib/sbi/nnrf-handler.c:731)
+09/13 17:13:17.183: [sbi] INFO: [96122f50-334c-41ed-9b3a-b793e86c0927] (NF-discover) NF Profile updated (../lib/sbi/nnrf-handler.c:758)
+09/13 17:13:17.184: [smf] INFO: UE SUPI[imsi-001010123456780] DNN[internet] IPv4[10.45.0.2] IPv6[] (../src/smf/npcf-handler.c:495)
+09/13 17:13:17.184: [gtp] INFO: gtp_connect() [127.0.0.7]:2152 (../lib/gtp/path.c:60)
+09/13 17:13:17.184: [sbi] WARNING: Try to discover [namf-comm] (../lib/sbi/path.c:114)
+09/13 17:13:17.184: [sbi] INFO: [95df9dec-334c-41ed-8413-b93011f5e5f7] (NF-discover) NF registered (../lib/sbi/nnrf-handler.c:731)
+09/13 17:13:17.184: [sbi] INFO: [95df9dec-334c-41ed-8413-b93011f5e5f7] (NF-discover) NF Profile updated (../lib/sbi/nnrf-handler.c:758) 
 
 
- 
+
+09/13 17:12:34.198: [nrf] INFO: [50c692e2-3338-41ed-85b7-a9c576af3f27] NF de-registered (../src/nrf/nf-sm.c:205)
+09/13 17:12:34.327: [nrf] INFO: [50c71d66-3338-41ed-816f-a71a1922c60e] NF de-registered (../src/nrf/nf-sm.c:205)
+09/13 17:12:34.335: [nrf] INFO: [95df9dec-334c-41ed-8413-b93011f5e5f7] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+09/13 17:12:34.341: [nrf] INFO: [95dd38cc-334c-41ed-ba01-c96776889f1f] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+09/13 17:12:34.622: [app] INFO: SIGTERM received (../src/main.c:53)
+09/13 17:12:34.622: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+09/13 17:12:34.624: [nrf] INFO: [50f67d04-3338-41ed-8d09-a9b3accc9481] NF de-registered (../src/nrf/nf-sm.c:205)
+09/13 17:12:34.624: [nrf] INFO: [50f7fe18-3338-41ed-8655-1139155df1f4] NF de-registered (../src/nrf/nf-sm.c:205)
+09/13 17:12:34.624: [nrf] INFO: [50fa4196-3338-41ed-a318-095a547e7f60] NF de-registered (../src/nrf/nf-sm.c:205)
+09/13 17:12:34.624: [nrf] INFO: [5101aae4-3338-41ed-85e9-d5ea635983cb] NF de-registered (../src/nrf/nf-sm.c:205)
+09/13 17:12:34.624: [nrf] INFO: [5105a018-3338-41ed-8e25-89e316bb2987] NF de-registered (../src/nrf/nf-sm.c:205)
+09/13 17:12:34.624: [nrf] INFO: [510a1bf2-3338-41ed-b132-7b20786fac5a] NF de-registered (../src/nrf/nf-sm.c:205)
+09/13 17:12:34.624: [nrf] INFO: [95df9dec-334c-41ed-8413-b93011f5e5f7] NF de-registered (../src/nrf/nf-sm.c:205)
+09/13 17:12:34.624: [nrf] INFO: [95dd38cc-334c-41ed-ba01-c96776889f1f] NF de-registered (../src/nrf/nf-sm.c:205)
+09/13 17:12:34.624: [app] INFO: NRF terminate...done (../src/nrf/app.c:39)
+Open5GS daemon v2.4.10
+
+09/13 17:12:34.628: [app] INFO: Configuration: '/etc/open5gs/nrf.yaml' (../lib/app/ogs-init.c:126)
+09/13 17:12:34.628: [app] INFO: File Logging: '/var/log/open5gs/nrf.log' (../lib/app/ogs-init.c:129)
+09/13 17:12:34.629: [sbi] INFO: nghttp2_server() [127.0.0.10]:7777 (../lib/sbi/nghttp2-server.c:149)
+09/13 17:12:34.629: [sbi] INFO: nghttp2_server() [::1]:7777 (../lib/sbi/nghttp2-server.c:149)
+09/13 17:12:34.629: [app] INFO: NRF initialize...done (../src/nrf/app.c:31)
+09/13 17:12:34.630: [nrf] WARNING: Not found [50f67d04-3338-41ed-8d09-a9b3accc9481] (../src/nrf/nrf-sm.c:130)
+09/13 17:12:34.636: [nrf] INFO: [960d9e4a-334c-41ed-860b-2f1c991745ce] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+09/13 17:12:34.650: [nrf] WARNING: Not found [50f7fe18-3338-41ed-8655-1139155df1f4] (../src/nrf/nrf-sm.c:130)
+09/13 17:12:34.656: [nrf] INFO: [9610a3b0-334c-41ed-a78c-e58738c840eb] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+09/13 17:12:34.657: [nrf] WARNING: Not found [50fa4196-3338-41ed-a318-095a547e7f60] (../src/nrf/nrf-sm.c:130)
+09/13 17:12:34.666: [nrf] INFO: [96122f50-334c-41ed-9b3a-b793e86c0927] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+09/13 17:12:34.679: [nrf] WARNING: Not found [5101aae4-3338-41ed-85e9-d5ea635983cb] (../src/nrf/nrf-sm.c:130)
+09/13 17:12:34.685: [nrf] INFO: [9615241c-334c-41ed-9048-01db86951554] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+09/13 17:12:34.698: [nrf] WARNING: Not found [5105a018-3338-41ed-8e25-89e316bb2987] (../src/nrf/nrf-sm.c:130)
+09/13 17:12:34.704: [nrf] INFO: [9617f688-334c-41ed-b86e-6d6a44f8c143] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+09/13 17:12:34.704: [nrf] WARNING: Not found [510a1bf2-3338-41ed-b132-7b20786fac5a] (../src/nrf/nrf-sm.c:130)
+09/13 17:12:34.715: [nrf] INFO: [961991aa-334c-41ed-be7c-495263461f43] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+09/13 17:12:44.345: [nrf] WARNING: Not found [95df9dec-334c-41ed-8413-b93011f5e5f7] (../src/nrf/nrf-sm.c:130)
+09/13 17:12:44.350: [nrf] WARNING: Not found [95dd38cc-334c-41ed-ba01-c96776889f1f] (../src/nrf/nrf-sm.c:130)
+09/13 17:12:46.347: [nrf] INFO: [95df9dec-334c-41ed-8413-b93011f5e5f7] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190)
+09/13 17:12:46.351: [nrf] INFO: [95dd38cc-334c-41ed-ba01-c96776889f1f] NF registered [Heartbeat:10s] (../src/nrf/nf-sm.c:190) 
 
 
- 
+
+09/13 17:12:34.679: [app] INFO: SIGTERM received (../src/main.c:53)
+09/13 17:12:34.679: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+09/13 17:12:34.679: [sbi] INFO: [5101aae4-3338-41ed-85e9-d5ea635983cb] NF de-registered (../lib/sbi/nf-sm.c:245)
+09/13 17:12:34.680: [app] INFO: NSSF terminate...done (../src/nssf/app.c:39)
+Open5GS daemon v2.4.10
+
+09/13 17:12:34.684: [app] INFO: Configuration: '/etc/open5gs/nssf.yaml' (../lib/app/ogs-init.c:126)
+09/13 17:12:34.684: [app] INFO: File Logging: '/var/log/open5gs/nssf.log' (../lib/app/ogs-init.c:129)
+09/13 17:12:34.685: [sbi] INFO: NF Service [nnssf-nsselection] (../lib/sbi/context.c:1392)
+09/13 17:12:34.685: [sbi] INFO: nghttp2_server() [127.0.0.14]:7777 (../lib/sbi/nghttp2-server.c:149)
+09/13 17:12:34.685: [app] INFO: NSSF initialize...done (../src/nssf/app.c:31)
+09/13 17:12:34.685: [sbi] INFO: [9615241c-334c-41ed-9048-01db86951554] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:222) 
+
+
+
+09/13 17:12:34.698: [app] INFO: SIGTERM received (../src/main.c:53)
+09/13 17:12:34.698: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+09/13 17:12:34.698: [sbi] INFO: [5105a018-3338-41ed-8e25-89e316bb2987] NF de-registered (../lib/sbi/nf-sm.c:245)
+09/13 17:12:34.699: [app] INFO: BSF terminate...done (../src/bsf/app.c:39)
+Open5GS daemon v2.4.10
+
+09/13 17:12:34.702: [app] INFO: Configuration: '/etc/open5gs/bsf.yaml' (../lib/app/ogs-init.c:126)
+09/13 17:12:34.702: [app] INFO: File Logging: '/var/log/open5gs/bsf.log' (../lib/app/ogs-init.c:129)
+09/13 17:12:34.703: [sbi] INFO: NF Service [nbsf-management] (../lib/sbi/context.c:1392)
+09/13 17:12:34.703: [sbi] INFO: nghttp2_server() [127.0.0.15]:7777 (../lib/sbi/nghttp2-server.c:149)
+09/13 17:12:34.703: [app] INFO: BSF initialize...done (../src/bsf/app.c:31)
+09/13 17:12:34.704: [sbi] INFO: [9617f688-334c-41ed-b86e-6d6a44f8c143] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:222) 
 
 

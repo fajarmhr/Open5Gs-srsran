@@ -1,1 +1,23 @@
 
+09/13 17:12:34.341: [upf] WARNING: PFCP[REQ] has already been associated (../src/upf/pfcp-sm.c:202)
+09/13 17:12:34.358: [app] INFO: SIGTERM received (../src/main.c:53)
+09/13 17:12:34.358: [app] INFO: Open5GS daemon terminating... (../src/main.c:226)
+09/13 17:12:34.359: [upf] INFO: PFCP de-associated (../src/upf/pfcp-sm.c:178)
+09/13 17:12:34.359: [app] INFO: UPF terminate...done (../src/upf/app.c:39)
+Open5GS daemon v2.4.10
+
+09/13 17:12:34.363: [app] INFO: Configuration: '/etc/open5gs/upf.yaml' (../lib/app/ogs-init.c:126)
+09/13 17:12:34.363: [app] INFO: File Logging: '/var/log/open5gs/upf.log' (../lib/app/ogs-init.c:129)
+09/13 17:12:34.366: [pfcp] INFO: pfcp_server() [127.0.0.7]:8805 (../lib/pfcp/path.c:30)
+09/13 17:12:34.366: [gtp] INFO: gtp_server() [127.0.0.7]:2152 (../lib/gtp/path.c:30)
+09/13 17:12:34.367: [app] INFO: UPF initialize...done (../src/upf/app.c:31)
+09/13 17:12:45.343: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.4]:8805 (../lib/pfcp/path.c:61)
+09/13 17:12:45.343: [upf] WARNING: cannot handle PFCP message type[1] (../src/upf/pfcp-sm.c:139)
+09/13 17:12:47.843: [pfcp] WARNING: [2] REMOTE Request Duplicated. Discard! for step 1 type 1 peer [127.0.0.4]:8805 (../lib/pfcp/xact.c:402)
+09/13 17:12:50.346: [pfcp] WARNING: [2] REMOTE Request Duplicated. Discard! for step 1 type 1 peer [127.0.0.4]:8805 (../lib/pfcp/xact.c:402)
+09/13 17:12:52.848: [upf] INFO: PFCP associated (../src/upf/pfcp-sm.c:173)
+09/13 17:13:17.184: [upf] INFO: [Added] Number of UPF-Sessions is now 1 (../src/upf/context.c:178)
+09/13 17:13:17.184: [gtp] INFO: gtp_connect() [127.0.0.4]:2152 (../lib/gtp/path.c:60)
+09/13 17:13:17.184: [upf] INFO: UE F-SEID[CP:0x1 UP:0x1] APN[internet] PDN-Type[1] IPv4[10.45.0.2] IPv6[] (../src/upf/context.c:397)
+09/13 17:13:17.184: [upf] INFO: UE F-SEID[CP:0x1 UP:0x1] APN[internet] PDN-Type[1] IPv4[10.45.0.2] IPv6[] (../src/upf/context.c:397)
+09/13 17:13:17.184: [gtp] INFO: gtp_connect() [127.0.1.2]:2152 (../lib/gtp/path.c:60)

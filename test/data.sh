@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 csv_conert.py
+python3 csv_convert.py
