@@ -1,0 +1,4 @@
+from pandas_ods_reader import read_ods
+
+path = "../res/semua.ods"
+sheet_name = "sheet2"
