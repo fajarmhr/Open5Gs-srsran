@@ -11,7 +11,7 @@ h=`cat /var/log/open5gs/nrf.log`
 i=`cat /var/log/open5gs/nssf.log`
 j=`cat /var/log/open5gs/bsf.log`
 
-cd raw
+cd ../raw
 echo "$a" > amf.csv
 echo "$b" > upf.csv
 echo "$c" > ausf.csv
