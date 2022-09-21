@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 m_tmsi=1222309212
+=======
+m_tmsi=-270763570
+>>>>>>> master
 mcc=1
 mnc=1
 mme_group_id=1
@@ -8,4 +12,8 @@ rx_count=4
 int_alg=1
 enc_alg=0
 ksi=0
+<<<<<<< HEAD
 k_asme=d70b0f235ed4789ed843b1fa2cbe9b37513724368bda30849cb6a1a5e33551ad
+=======
+k_asme=8c7aa0e63ae9c69439cf01f9885f1fc5149659257ee1ee193180086a43f10069
+>>>>>>> master
