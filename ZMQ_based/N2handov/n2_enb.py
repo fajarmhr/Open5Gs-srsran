@@ -75,16 +75,16 @@ class n2_enb(gr.top_block, Qt.QWidget):
         # Variables
         ##################################################
         self.samp_rate = samp_rate = 1920000
-        self.cell_gain1 = cell_gain1 = 1
-        self.cell_gain0 = cell_gain0 = 0.3
+        self.cell_gain1 = cell_gain1 = 0
+        self.cell_gain0 = cell_gain0 = 1
 
         ##################################################
         # Blocks
         ##################################################
-        self._cell_gain1_range = Range(0, 1, 0.1, 1, 200)
+        self._cell_gain1_range = Range(0, 1, 0.1, 0, 200)
         self._cell_gain1_win = RangeWidget(self._cell_gain1_range, self.set_cell_gain1, "'cell_gain1'", "counter_slider", float, QtCore.Qt.Horizontal)
         self.top_layout.addWidget(self._cell_gain1_win)
-        self._cell_gain0_range = Range(0, 1, 0.1, 0.3, 200)
+        self._cell_gain0_range = Range(0, 1, 0.1, 1, 200)
         self._cell_gain0_win = RangeWidget(self._cell_gain0_range, self.set_cell_gain0, "'cell_gain0'", "counter_slider", float, QtCore.Qt.Horizontal)
         self.top_layout.addWidget(self._cell_gain0_win)
         self.zeromq_req_source_1 = zeromq.req_source(gr.sizeof_gr_complex, 1, 'tcp://localhost:2001', 100, False, -1)
