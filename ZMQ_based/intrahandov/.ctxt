@@ -1,19 +1,27 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 m_tmsi=1222309212
 =======
 m_tmsi=-270763570
 >>>>>>> master
+=======
+m_tmsi=-117378262
+>>>>>>> master
 mcc=1
 mnc=1
-mme_group_id=1
-mme_code=26
+mme_group_id=2
+mme_code=1
 tx_count=4
-rx_count=4
-int_alg=1
+rx_count=2
+int_alg=2
 enc_alg=0
 ksi=0
+<<<<<<< HEAD
 <<<<<<< HEAD
 k_asme=d70b0f235ed4789ed843b1fa2cbe9b37513724368bda30849cb6a1a5e33551ad
 =======
 k_asme=8c7aa0e63ae9c69439cf01f9885f1fc5149659257ee1ee193180086a43f10069
+>>>>>>> master
+=======
+k_asme=280bfb740182245c5a81ed91a0d58cc171e6aea929b174d0d289ebedaf5db796
 >>>>>>> master
