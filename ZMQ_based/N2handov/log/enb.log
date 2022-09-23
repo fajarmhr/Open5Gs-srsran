@@ -1,0 +1,5 @@
+2022-09-23T08:49:12.302182 [ENB    ] [I] Using binary srsenb with arguments: ./enb.conf 
+2022-09-23T08:49:12.324083 [ENB    ] [I] Built in Release mode using commit ce8a3cae1 on branch master.
+2022-09-23T08:49:12.324692 [ENB    ] [I] Using sync queue size of one for ZMQ based radio.
+2022-09-23T08:49:25.999052 [ENB    ] [I] Interval less than 10ms, skipping measurement.
+2022-09-23T08:49:27.840486 [STCK   ] [I] Bearers: Registered eps-BearerID=1 for rnti=0x4601, lcid=4 over NR-PDCP
