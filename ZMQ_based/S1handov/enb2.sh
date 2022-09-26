@@ -2,7 +2,7 @@
 
 LOG_ARGS="--log.all_level=info"
 
-CONF_LOC=`locate enb.conf | grep S1handov`
+CONF_LOC=`locate enb2.conf | grep S1handov`
 RR_LOC=`locate rr2.conf | grep S1handov`
 PORT_ARGS="tx_port=tcp://*:2103,rx_port=tcp://localhost:2102"
 

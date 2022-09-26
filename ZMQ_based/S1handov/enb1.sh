@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOG_ARGS="--log.all_level=debug"
+LOG_ARGS="--log.all_level=info"
 
 CONF_LOC=`locate enb.conf | grep S1handov`
 RR_LOC=`locate rr1.conf | grep S1handov`
