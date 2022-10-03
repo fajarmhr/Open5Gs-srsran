@@ -12,8 +12,7 @@ if [ $? -eq 1 ]; then
 fi
 
 LOG_ARGS="--log.all_level=debug"
-CONF_LOC=`locate ue.conf | grep N2handov`
 NETNS=`sudo ip netns list | grep 1`
 OTHER_ARGS="--gw.netns="${NETNS}""
 
-sudo srsue ${CONF_LOC} ${LOG_ARGS} ${OTHER_ARGS} $@
+sudo srsue ./ue.conf ${LOG_ARGS} ${OTHER_ARGS} $@
