@@ -1,0 +1,24 @@
+5G Core
+
+amf
+ausf
+bsf
+nrf
+nssf
+pcf
+scp
+smf
+udm
+udr
+upf
+
+
+4G Core
+
+hss
+mme
+pcrf
+sgwc
+sgwu
+smf
+upf
