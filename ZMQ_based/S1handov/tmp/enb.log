@@ -1,0 +1,43 @@
+2022-10-13T08:00:51.453891 [ENB    ] [I] Using binary srsenb with arguments: ./enb.conf --rf.device_args="fail_on_disconnect=true,tx_port=tcp://*:2101,rx_port=tcp://localhost:2100,id=enb,base_srate=23.04e6" 
+2022-10-13T08:00:51.495403 [ENB    ] [I] Built in Release mode using commit ce8a3cae1 on branch master.
+2022-10-13T08:00:51.496398 [ENB    ] [I] Using sync queue size of one for ZMQ based radio.
+2022-10-13T08:00:51.546843 [RRC    ] [I] Tx Broadcast PDU - systemInformationBlockType1, cc=0, idx=0 (15 B)
+    0000: 40 64 04 e1 00 01 00 19 b0 18 14 60 10 82 80
+2022-10-13T08:00:51.546850 [RRC    ] [I] Tx Broadcast PDU - systemInformation-r8, cc=0, idx=1 (33 B)
+    0000: 00 80 0c e1 bf 78 8c c0 ca 11 e0 01 00 00 08 01
+    0010: 82 99 45 ab 9c 30 c6 a6 cc c1 c2 14 62 d8 4e a5
+2022-10-13T08:00:51.546853 [RRC    ] [I] Allocating 1 PRBs for PUCCH
+2022-10-13T08:00:51.547005 [MAC    ] [I] [    0] Using time-domain PF scheduling policy for cc=0
+2022-10-13T08:00:51.547071 [RRC    ] [I] T310 200, T311 10000, N310 1
+2022-10-13T08:00:51.547072 [RRC    ] [I] Inactivity timeout: 300000 ms
+2022-10-13T08:00:51.547072 [RRC    ] [I] Max consecutive MAC KOs: 100
+2022-10-13T08:00:51.547078 [S1AP   ] [I] Proc "MME Connection" - Starting new MME connection.
+2022-10-13T08:00:51.547078 [S1AP   ] [I] Connecting to MME 127.0.0.2:36412
+2022-10-13T08:00:51.547103 [COMN   ] [D] [    0] Setting RTO_INFO options on SCTP socket. Association 0, Initial RTO 3000, Minimum RTO 1000, Maximum RTO 6000
+2022-10-13T08:00:51.547105 [COMN   ] [D] [    0] Setting SCTP_INITMSG options on SCTP socket. Max attempts 3, Max init attempts timeout 5000
+2022-10-13T08:00:51.547117 [COMN   ] [D] [    0] Successfully bound to address 127.0.1.1:0
+2022-10-13T08:00:51.547118 [S1AP   ] [I] SCTP socket opened. fd=6
+2022-10-13T08:00:51.547199 [S1AP   ] [I] SCTP socket connected with MME. fd=6
+2022-10-13T08:00:51.547215 [COMN   ] [D] [    0] RxSockets: socket fd=6 has been registered.
+2022-10-13T08:00:51.547215 [S1AP   ] [I] SCTP socket established with MME
+2022-10-13T08:00:51.547241 [S1AP   ] [I] Tx S1AP SDU, s1SetupRequest
+    0000: 00 11 00 2d 00 00 04 00 3b 00 08 00 09 f1 07 00
+    0010: 00 19 b0 00 3c 40 0a 03 80 73 72 73 65 6e 62 30
+2022-10-13T08:00:51.547284 [S1AP   ] [I] Proc "MME Connection" - S1SetupRequest sent. Waiting for response...
+2022-10-13T08:00:51.547312 [COMN   ] [D] [    0] Successfully bound to address 127.0.1.1:2152
+2022-10-13T08:00:51.547315 [COMN   ] [D] [    0] RxSockets: socket fd=7 has been registered.
+2022-10-13T08:00:51.549458 [RF     ] [I] Configuring physical DL channel 0 with band-pass filter (0.0, 0.0)
+2022-10-13T08:00:51.549459 [RF     ] [I] Configuring physical UL channel 0 with band-pass filter (0.0, 0.0)
+2022-10-13T08:00:51.554214 [S1AP   ] [I] Rx S1AP SDU - S1SetupResponse
+    0000: 20 11 00 29 00 00 03 00 3d 40 0e 05 80 6f 70 65
+    0010: 6e 35 67 73 2d 6d 6d 65 30 00 69 00 0b 00 00 09
+2022-10-13T08:00:51.554220 [S1AP   ] [I] Proc "MME Connection" - S1Setup procedure completed successfully
+2022-10-13T08:00:51.861550 [PHY0   ] [I] [    0] Component Carrier Worker 0 configured cell 50 PRB
+2022-10-13T08:00:51.861598 [PHY0   ] [I] [    0] Worker 0 configured cell 50 PRB
+2022-10-13T08:00:52.016237 [PHY1   ] [I] [    0] Component Carrier Worker 0 configured cell 50 PRB
+2022-10-13T08:00:52.016282 [PHY1   ] [I] [    0] Worker 0 configured cell 50 PRB
+2022-10-13T08:00:52.175578 [PHY2   ] [I] [    0] Component Carrier Worker 0 configured cell 50 PRB
+2022-10-13T08:00:52.175633 [PHY2   ] [I] [    0] Worker 0 configured cell 50 PRB
+2022-10-13T08:00:52.187789 [RF     ] [I] Mapping RF channel 0 (device=0, channel=0) to logical carrier 0 on f_tx=2680.0 MHz
+2022-10-13T08:00:52.187792 [RF     ] [I] Mapping RF channel 0 (device=0, channel=0) to logical carrier 0 on f_rx=2560.0 MHz
+2022-10-13T08:00:52.187793 [PHY    ] [I] [    0] Starting RX/TX thread nof_prb=50, sf_len=11520
