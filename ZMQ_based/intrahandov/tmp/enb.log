@@ -1,0 +1,3 @@
+2022-10-18T18:32:28.206413 [ENB    ] [I] Using binary srsenb with arguments: ./enb.conf --enb_files.rr_config=/home/masddika/screeptzy/Open5Gs-srsran/ZMQ_based/intrahandov/rr5g.conf --enb.mme_addr=127.0.0.5 
+2022-10-18T18:32:28.238039 [ENB    ] [I] Built in Release mode using commit ce8a3cae1 on branch master.
+2022-10-18T18:32:28.239704 [ENB    ] [I] Using sync queue size of one for ZMQ based radio.

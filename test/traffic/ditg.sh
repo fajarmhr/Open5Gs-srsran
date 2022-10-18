@@ -1,19 +1,19 @@
 #ITGSend -a 10.45.0.1 -m RTTM -T SCTP 3 1 -rp 9030 -l send_log_file
 
 #SCTP
-sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m RTTM -T SCTP 3 1 -rp 9030 -l sctp_rttm_file
-sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m ODWM -T SCTP 3 1 -rp 9030 -l sctp_odwm_file
+sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m RTTM -T SCTP 3 1 -rp 9030 -l res_sctp_rttm
+sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m ODWM -T SCTP 3 1 -rp 9030 -l res_sctp_odwm
 
 #TCP
-sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m RTTM -T TCP -rp 9030 -l tcp_rttm_file
-sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m ODWM -T TCP -rp 9030 -l tcp_odwm_file
+sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m RTTM -T TCP -rp 9030 -l res_tcp_rttm
+sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m ODWM -T TCP -rp 9030 -l res_tcp_odwm
 
 #UDP
-sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m RTTM -T UDP -rp 9030 -l udp_rttm_file
-sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m ODWM -T UDP -rp 9030 -l udp_odwm_file
+sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m RTTM -T UDP -rp 9030 -l res_udp_rttm
+sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m ODWM -T UDP -rp 9030 -l res_udp_odwm
 
 #VoIP
-sudo ip netns exec ue1 ITGSend voip_script -l voip_file
+sudo ip netns exec ue1 ITGSend voip_script -l res_voip
 
 # NOTE
 # -m <meter> : ODWM (default), RTTM

@@ -3,7 +3,7 @@
 sudo updatedb
 RAW=`locate test/getdata | grep "/test/getdata/raw/"`
 cd res
-for ((c=1; c<=10; c++)) 
+for ((c=1; c<=3; c++)) 
 do
    mpstat >> ${RAW}cpu.csv
    free -m >> ${RAW}mem.csv
