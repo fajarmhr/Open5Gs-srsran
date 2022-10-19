@@ -2,21 +2,21 @@
 
 #SCTP
 sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m RTTM -T SCTP 3 1 -rp 9030 -l res_sctp_rttm
-sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m ODWM -T SCTP 3 1 -rp 9030 -l res_sctp_odwm
+sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m OWDM -T SCTP 3 1 -rp 9030 -l res_sctp_owdm
 
 #TCP
 sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m RTTM -T TCP -rp 9030 -l res_tcp_rttm
-sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m ODWM -T TCP -rp 9030 -l res_tcp_odwm
+sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m OWDM -T TCP -rp 9030 -l res_tcp_owdm
 
 #UDP
 sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m RTTM -T UDP -rp 9030 -l res_udp_rttm
-sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m ODWM -T UDP -rp 9030 -l res_udp_odwm
+sudo ip netns exec ue1 ITGSend -a 10.45.0.1 -m OWDM -T UDP -rp 9030 -l res_udp_owdm
 
 #VoIP
 sudo ip netns exec ue1 ITGSend voip_script -l res_voip
 
 # NOTE
-# -m <meter> : ODWM (default), RTTM
+# -m <meter> : OWDM (default), RTTM
 # -T <protocol> : udp (default), tcp, icmp, sctp, dccp
 # -t <duration> : (default 10000ms)
 # -rp <receiver port>
