@@ -1,4 +1,2 @@
-from pandas_ods_reader import read_ods
-
-path = "../res/semua.ods"
-sheet_name = "sheet2"
+22.51 start
+22.53 iperf

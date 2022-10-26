@@ -1,0 +1,10 @@
+
+Open5GS daemon v2.4.11
+
+10/26 22:48:10.852: [app] INFO: Configuration: '/etc/open5gs/udr.yaml' (../lib/app/ogs-init.c:126)
+10/26 22:48:10.852: [app] INFO: File Logging: '/var/log/open5gs/udr.log' (../lib/app/ogs-init.c:129)
+10/26 22:48:10.876: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+10/26 22:48:10.876: [sbi] INFO: NF Service [nudr-dr] (../lib/sbi/context.c:1400)
+10/26 22:48:10.876: [sbi] INFO: nghttp2_server() [127.0.0.20]:7777 (../lib/sbi/nghttp2-server.c:150)
+10/26 22:48:10.877: [app] INFO: UDR initialize...done (../src/udr/app.c:31)
+10/26 22:48:10.882: [sbi] INFO: [97f0e9ea-5545-41ed-91b4-0d6e952d4acb] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:222)

@@ -11,7 +11,7 @@ h=`cat /var/log/open5gs/nrf.log`
 i=`cat /var/log/open5gs/nssf.log`
 j=`cat /var/log/open5gs/bsf.log`
 
-cd ../raw
+cd raw
 echo "$a" > amf.csv
 echo "$b" > upf.csv
 echo "$c" > ausf.csv
@@ -23,13 +23,29 @@ echo "$h" > nrf.csv
 echo "$i" > nssf.csv
 echo "$j" > bsf.csv
 
-sudo updatedb
-cc=`locate /raw/semua.csv`
+echo -n -e " updatedb?? [y/n] "
+read VAR
+
+if [[ $VAR == y ]]
+then
+    sudo updatedb
+    echo
+    echo "okeh di update"
+
+elif [[ $VAR == n ]]
+then
+    echo
+    echo "okewes skip"
+    echo
+fi
+
+cc=`locate lognother/raw/semua.csv`
 if [ -z "$cc" ]
 then
-    echo ""
+    echo "creating log file in csv ...."
 else
     rm semua.csv
+    echo "recreating log in csv ...."
 fi
 
 echo -e "$a \n\n" >> semua.csv
@@ -42,3 +58,7 @@ echo -e "$g \n\n" >> semua.csv
 echo -e "$h \n\n" >> semua.csv
 echo -e "$i \n\n" >> semua.csv
 echo -e "$j \n\n" >> semua.csv
+
+cp semua.csv ../res/semua.csv
+rm semua.csv
+echo "donee..."

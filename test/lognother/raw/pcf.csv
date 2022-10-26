@@ -1,0 +1,18 @@
+
+Open5GS daemon v2.4.11
+
+10/26 22:48:10.894: [app] INFO: Configuration: '/etc/open5gs/pcf.yaml' (../lib/app/ogs-init.c:126)
+10/26 22:48:10.894: [app] INFO: File Logging: '/var/log/open5gs/pcf.log' (../lib/app/ogs-init.c:129)
+10/26 22:48:10.916: [dbi] INFO: MongoDB URI: 'mongodb://localhost/open5gs' (../lib/dbi/ogs-mongoc.c:130)
+10/26 22:48:10.916: [sbi] INFO: NF Service [npcf-am-policy-control] (../lib/sbi/context.c:1400)
+10/26 22:48:10.917: [sbi] INFO: NF Service [npcf-smpolicycontrol] (../lib/sbi/context.c:1400)
+10/26 22:48:10.919: [sbi] INFO: NF Service [npcf-policyauthorization] (../lib/sbi/context.c:1400)
+10/26 22:48:10.924: [sbi] INFO: nghttp2_server() [127.0.0.13]:7777 (../lib/sbi/nghttp2-server.c:150)
+10/26 22:48:10.925: [app] INFO: PCF initialize...done (../src/pcf/app.c:31)
+10/26 22:48:10.927: [sbi] INFO: [97f7b96e-5545-41ed-b268-c9e292228953] NF registered [Heartbeat:10s] (../lib/sbi/nf-sm.c:222)
+10/26 22:51:09.931: [sbi] WARNING: Try to discover [nudr-dr] (../lib/sbi/path.c:114)
+10/26 22:51:09.947: [sbi] INFO: [97f0e9ea-5545-41ed-91b4-0d6e952d4acb] (NF-discover) NF registered (../lib/sbi/nnrf-handler.c:731)
+10/26 22:51:09.947: [sbi] INFO: [97f0e9ea-5545-41ed-91b4-0d6e952d4acb] (NF-discover) NF Profile updated (../lib/sbi/nnrf-handler.c:758)
+10/26 22:51:10.398: [sbi] WARNING: Try to discover [nbsf-management] (../lib/sbi/path.c:114)
+10/26 22:51:10.399: [sbi] INFO: [97af3694-5545-41ed-9c4f-b5db996f8d93] (NF-discover) NF registered (../lib/sbi/nnrf-handler.c:731)
+10/26 22:51:10.399: [sbi] INFO: [97af3694-5545-41ed-9c4f-b5db996f8d93] (NF-discover) NF Profile updated (../lib/sbi/nnrf-handler.c:758)
