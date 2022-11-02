@@ -1,0 +1,6 @@
+
+10/31 16:15:18.177: [diam] ERROR: pid:Receiver (15) SCTP/noTLS) in fd_sctp_recvmeta@sctp.c:1271: ERROR: in 'ret' :	Connection reset by peer
+ ((null):0)
+10/31 16:15:18.453: [diam] ERROR: pid:PSM/mme.localdomain in fd_psm_change_state@p_psm.c:284: 'STATE_OPEN'	-> 'STATE_CLOSED'	'mme.localdomain'
+ ((null):0)
+10/31 16:15:21.866: [diam] INFO: CONNECTED TO 'mme.localdomain' (SCTP,soc#13): (../lib/diameter/common/logger.c:108)

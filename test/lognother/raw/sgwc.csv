@@ -1,0 +1,10 @@
+
+10/31 16:08:52.562: [sgwc] INFO: [Added] Number of SGWC-UEs is now 1 (../src/sgwc/context.c:210)
+10/31 16:08:52.562: [sgwc] INFO: [Added] Number of SGWC-Sessions is now 1 (../src/sgwc/context.c:891)
+10/31 16:08:52.624: [gtp] INFO: gtp_connect() [127.0.0.4]:2123 (../lib/gtp/path.c:60)
+10/31 16:13:48.283: [sgwc] WARNING: GTP Cause [Value:90] - PFCP_CAUSE[77] (../src/sgwc/s11-handler.c:1176)
+10/31 16:15:51.366: [sgwc] INFO: [Removed] Number of SGWC-Sessions is now 0 (../src/sgwc/context.c:897)
+10/31 16:15:51.366: [sgwc] INFO: [Removed] Number of SGWC-UEs is now 0 (../src/sgwc/context.c:228)
+10/31 16:15:51.366: [sgwc] INFO: [Added] Number of SGWC-UEs is now 1 (../src/sgwc/context.c:210)
+10/31 16:15:51.366: [sgwc] INFO: [Added] Number of SGWC-Sessions is now 1 (../src/sgwc/context.c:891)
+10/31 16:16:08.452: [sgwc] WARNING: GTP Cause [Value:90] - PFCP_CAUSE[77] (../src/sgwc/s11-handler.c:1176)

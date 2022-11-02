@@ -1,0 +1,16 @@
+
+10/31 16:08:52.562: [sgwu] INFO: UE F-SEID[UP:0x1 CP:0x1] (../src/sgwu/context.c:157)
+10/31 16:08:52.623: [sgwu] INFO: [Added] Number of SGWU-Sessions is now 1 (../src/sgwu/context.c:162)
+10/31 16:08:52.685: [gtp] INFO: gtp_connect() [127.0.0.5]:2152 (../lib/gtp/path.c:60)
+10/31 16:08:52.942: [gtp] INFO: gtp_connect() [127.0.1.1]:2152 (../lib/gtp/path.c:60)
+10/31 16:10:49.022: [gtp] INFO: gtp_connect() [127.0.1.2]:2152 (../lib/gtp/path.c:60)
+10/31 16:10:49.022: [sgwu] ERROR: [DROP] Small GTPU packet(type:26 len:12) (../src/sgwu/gtp-path.c:129)
+0000: 321a0008 00000001 00000000            2...........
+10/31 16:11:08.142: [sgwu] ERROR: [DROP] Small GTPU packet(type:26 len:12) (../src/sgwu/gtp-path.c:129)
+0000: 321a0008 00000003 00000000            2...........
+10/31 16:11:27.622: [sgwu] ERROR: [DROP] Small GTPU packet(type:26 len:12) (../src/sgwu/gtp-path.c:129)
+0000: 321a0008 00000005 00010000            2...........
+10/31 16:11:40.982: [sgwu] ERROR: [DROP] Small GTPU packet(type:26 len:12) (../src/sgwu/gtp-path.c:129)
+0000: 321a0008 00000007 00020000            2...........
+10/31 16:15:51.367: [sgwu] INFO: UE F-SEID[UP:0x2 CP:0x2] (../src/sgwu/context.c:157)
+10/31 16:15:51.367: [sgwu] INFO: [Added] Number of SGWU-Sessions is now 2 (../src/sgwu/context.c:162)
