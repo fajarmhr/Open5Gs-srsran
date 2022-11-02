@@ -53,6 +53,9 @@ sudo systemctl disable open5gs-udrd
 echo "**** Disabling webui... ****"
 sudo systemctl disable open5gs-webui
 
+echo "**** Disabling scpd... ****"
+sudo systemctl disable open5gs-scpd
+
 echo
 echo
 echo "Done"

@@ -1,0 +1,6 @@
+==== MEAS ====
+https://www.blogiztic.net/2021/07/pengertian-rssi-sinr-pada-sinyal-lte.html
+https://www.techplayon.com/5g-nr-measurement-events/
+
+==== GLOSARIUM ====
+https://info-nrlte.com/tag/rach/

@@ -58,6 +58,9 @@ systemctl restart open5gs-udrd
 echo "**** Restarting webui... ****"
 systemctl restart open5gs-webui
 
+echo "**** Restarting scpd... ****"
+systemctl restart open5gs-scpd
+
 echo
 echo
 echo "Done"

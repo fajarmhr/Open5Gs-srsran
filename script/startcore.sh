@@ -53,6 +53,9 @@ sudo systemctl start open5gs-udrd
 echo "**** Starting webui... ****"
 sudo systemctl start open5gs-webui
 
+echo "**** Starting scpd... ****"
+sudo systemctl start open5gs-scpd
+
 echo
 echo
 echo "Done"
