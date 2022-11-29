@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RAW=`locate test/getdata | grep "/test/getdata/raw"`
+# RAW=`locate test/getdata | grep "/test/getdata/raw"`
 cd res
 
 echo "IPERF CLIENT"
@@ -18,20 +18,20 @@ then
    echo "iperfing client on server ${IPUE}"
    for ((z=1; z<=2; z++)) 
    do
-      iperf3 -c ${IPUE} -i 0.5 -t 60 --sctp >> ${RAW}/sctp_i.csv
-      iperf3 -c ${IPUE} -i 0.5 -t 60 >> ${RAW}/tcp_i.csv
-      iperf3 -c ${IPUE} -i 0.5 -t 60 --udp >> ${RAW}/udp_i.csv
-      a=`cat ${RAW}/sctp_i.csv | grep "receiver" | awk '{print$7}'`$'\n'
-      b=`cat ${RAW}/tcp_i.csv | grep "receiver" | awk '{print$7}'`$'\n'
-      c=`cat ${RAW}/udp_i.csv | grep "receiver" | awk '{print$7}'`$'\n'
+      iperf3 -c ${IPUE} -i 0.5 -t 60 --sctp >> ../raw/sctp_i.csv
+      iperf3 -c ${IPUE} -i 0.5 -t 60 >> ../raw/tcp_i.csv
+      iperf3 -c ${IPUE} -i 0.5 -t 60 --udp >> ../raw/udp_i.csv
+      a=`cat ../raw/sctp_i.csv | grep "receiver" | awk '{print$7}'`$'\n'
+      b=`cat ../raw/tcp_i.csv | grep "receiver" | awk '{print$7}'`$'\n'
+      c=`cat ../raw/udp_i.csv | grep "receiver" | awk '{print$7}'`$'\n'
 
       echo "$a" > sctp_i.csv
       echo "$b" > tcp_i.csv
       echo "$c" > udp_i.csv
    done
-   rm ${RAW}/sctp_i.csv
-   rm ${RAW}/tcp_i.csv
-   rm ${RAW}/udp_i.csv
+   rm ../raw/sctp_i.csv
+   rm ../raw/tcp_i.csv
+   rm ../raw/udp_i.csv
 
 elif [[ $CLT == 2 ]]
 then
@@ -40,20 +40,20 @@ then
    echo
    for ((z=1; z<=2; z++)) 
    do
-      sudo ip netns exec ue1 iperf3 -c 10.45.0.1 -i 0.5 -t 60 --sctp >> ${RAW}/sctp_i.csv
-      sudo ip netns exec ue1 iperf3 -c 10.45.0.1 -i 0.5 -t 60 >> ${RAW}/tcp_i.csv
-      sudo ip netns exec ue1 iperf3 -c 10.45.0.1 -i 0.5 -t 60 --udp >> ${RAW}/udp_i.csv
-      a=`cat ${RAW}/sctp_i.csv | grep "receiver" | awk '{print$7}'`$'\n'
-      b=`cat ${RAW}/tcp_i.csv | grep "receiver" | awk '{print$7}'`$'\n'
-      c=`cat ${RAW}/udp_i.csv | grep "receiver" | awk '{print$7}'`$'\n'
+      sudo ip netns exec ue1 iperf3 -c 10.45.0.1 -i 0.5 -t 60 --sctp >> ../raw/sctp_i.csv
+      sudo ip netns exec ue1 iperf3 -c 10.45.0.1 -i 0.5 -t 60 >> ../raw/tcp_i.csv
+      sudo ip netns exec ue1 iperf3 -c 10.45.0.1 -i 0.5 -t 60 --udp >> ../raw/udp_i.csv
+      a=`cat ../raw/sctp_i.csv | grep "receiver" | awk '{print$7}'`$'\n'
+      b=`cat ../raw/tcp_i.csv | grep "receiver" | awk '{print$7}'`$'\n'
+      c=`cat ../raw/udp_i.csv | grep "receiver" | awk '{print$7}'`$'\n'
 
       echo "$a" > sctp_i.csv
       echo "$b" > tcp_i.csv
       echo "$c" > udp_i.csv
    done
-   rm ${RAW}/sctp_i.csv
-   rm ${RAW}/tcp_i.csv
-   rm ${RAW}/udp_i.csv
+   rm ../raw/sctp_i.csv
+   rm ../raw/tcp_i.csv
+   rm ../raw/udp_i.csv
 elif [[ $CLT == 3 ]]
 then
     echo

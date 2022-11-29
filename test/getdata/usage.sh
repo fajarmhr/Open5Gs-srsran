@@ -1,8 +1,8 @@
 #!/bin/bash
 
-RAW=`locate test/getdata | grep "/test/getdata/raw"`
+# RAW=`locate test/getdata | grep "/test/getdata/raw"`
 cd res
-for ((z=1; z<=100; z++)) 
+for ((z=1; z<=50; z++)) 
 do
    mpstat >> ../raw/cpu.csv
    free -m >> ../raw/mem.csv
